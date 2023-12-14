@@ -10,6 +10,12 @@ async function getAllProducts() {
           id
           title
           createdAt
+          images(first:1) {
+            nodes {
+              id
+              url
+            }
+          }
           priceRangeV2 {
             maxVariantPrice {
               amount
